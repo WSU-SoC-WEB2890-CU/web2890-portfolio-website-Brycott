@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid bg-primary nav">
+        <img class="logo" src="images/Logo-BC.jpg" alt="" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse list justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="Contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aboutMe.html">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <h1 class="text-center m-5"><strong>Contact Me</strong></h1>
+
+    <section class="container pb-5">
+      <div class="d-flex border border-3 border-dark">
+        <div class="m-5">
+          <h2 class="mb-5 d-flex justify-content-start ms-8">Send me a message</h2>
+          <h4 class="w-75">
+            If you are interested in my work or want to collaborate on a project together, send me a message and we can
+            create a cool website together.
+          </h4>
+          <form class="mt-5">
+            <div class="d-flex gap-5">
+              <div>
+                <input id="name" name="name" placeholder="name" />
+              </div>
+              <div>
+                <input id="email" name="email" placeholder="Email" />
+              </div>
+            </div>
+            <div>
+              <input class="message" id="message" name="message" placeholder="message" />
+            </div>
+            <button class="mt-3 fs-4 bg-warning w-75 text-center">Submit</button>
+          </form>
+        </div>
+        <div>
+          <img class="m-5" src="images/ProfileImage.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section-->
+    <section class="bg-secondary text-light pt-5 pb-5">
+      <div class="d-flex justify-content-center footer flex-wrap container-fluid">
+        <div class="d-flex justify-content-center">
+          <div class="w-50">
+            <h3>Bryce Cottam</h3>
+            <p class="w-50">Full Stack Web Design Student at Weber State University</p>
+          </div>
+          <div class="d-flex flex-column">
+            <h3>Navigation</h3>
+            <a href="index.html">Home</a>
+            <a href="aboutMe.html">About Me</a>
+            <a href="Contact.html">Contact Me</a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="d-flex flex-column text-start pe-5">
+            <h3>Project Gallery</h3>
+            <a href="WEB1400ProjectDescription.html">Horizon Zoo</a>
+
+            <a href="WEB1430ProjectDescription.html">React to Events</a>
+
+            <a href="WEB2500ProjectDescription.html">How to Build a Computer</a>
+
+            <a href="WEB2620ProjectDescription.html">Bootstrap Demo</a>
+
+            <a href="WEB3550ProjectDescription.html">Wonderful Quotes</a>
+
+            <a href="WEB2890ProjectDescription.html">Cardeal Website</a>
+          </div>
+          <div class="text-start">
+            <h3>Contact Me</h3>
+            <div>
+              <h4>Email</h4>
+              <p>Bcottam2@gmail.com</p>
+            </div>
+            <div>
+              <h4>Phone</h4>
+              <p>208-969-1033</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h6 class="text-center mt-4">&copy;Bryce Cottam 2023</h6>
+    </section>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>

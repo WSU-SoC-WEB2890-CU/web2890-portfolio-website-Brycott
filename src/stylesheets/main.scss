@@ -1,3 +1,146 @@
 /* Your styles go here */
+$primary: #649fcc;
+$secondary: #263c4d;
+$warning: #cc970e;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 3.5,
+  7: $spacer * 4,
+  8: $spacer * 4.5,
+  9: $spacer * 5,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 500px,
+  md: 768px,
+  lg: 1920px,
+  xl: 1200px,
+  xxl: 1400px,
+);
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+body {
+  font-family: montserrat, sans-serif;
+}
+.list {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+}
+
+.list a:hover,
+.list a.active {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 4px;
+}
+
+.logo {
+  max-width: 10rem;
+  text-align: left;
+}
+
+.nav {
+  display: flex;
+}
+
+.body {
+  button {
+    text-decoration: none;
+  }
+}
+
+.heroSection {
+  margin-top: -2rem;
+
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  h1 {
+    font-size: 3rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+    background-color: #cc970e;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.7rem;
+  }
+
+  h4 {
+    padding-top: 8rem;
+    font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.bootstraplogo {
+  height: 6rem;
+}
+
+.logos {
+  display: flex;
+  gap: 5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.message {
+  height: 10rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.email {
+  float: left;
+}
+
+.casestudyimg {
+  height: 50rem;
+  background-size: cover;
+}
+
+@include media-breakpoint-down(sm) {
+}
+
+@include media-breakpoint-down(lg) {
+}
+
+@include media-breakpoint-down(md) {
+  .hero_text {
+    width: 100% !important;
+    h2 {
+      color: white;
+    }
+  }
+  .project_content {
+    flex-direction: column;
+    justify-content: center;
+    img {
+      flex-wrap: wrap;
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+}
