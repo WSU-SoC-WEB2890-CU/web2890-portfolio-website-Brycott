@@ -22,8 +22,6 @@ $grid-breakpoints: (
   sm: 500px,
   md: 768px,
   lg: 1920px,
-  xl: 1200px,
-  xxl: 1400px,
 );
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
@@ -38,6 +36,10 @@ body {
   padding-right: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.projects_link {
+  text-decoration: none;
 }
 
 .list a {
@@ -65,6 +67,13 @@ body {
   button {
     text-decoration: none;
   }
+}
+
+.profile_img {
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 300px;
+  max-height: 400px;
 }
 
 .heroSection {
@@ -121,12 +130,6 @@ body {
   background-size: cover;
 }
 
-@include media-breakpoint-down(sm) {
-}
-
-@include media-breakpoint-down(lg) {
-}
-
 @include media-breakpoint-down(md) {
   .hero_text {
     width: 100% !important;
@@ -141,6 +144,22 @@ body {
       flex-wrap: wrap;
       max-height: 100%;
       max-width: 100%;
+    }
+  }
+
+  .skills {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    img {
+      min-width: 100px;
+    }
+    h3 {
+      min-width: 300px;
+    }
+
+    .classes {
+      margin-top: 2rem;
     }
   }
 }
